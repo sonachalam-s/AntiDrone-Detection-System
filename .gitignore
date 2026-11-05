@@ -1,0 +1,51 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+*.log
+datasets/
+runs/
+.cache/
+# Python virtual environments
+venv/
+venv_new/
+venv_old/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and generated outputs
+*.log
+runs/
+.dist/
+.cache/
+
+# Datasets
+datasets/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Generated surveillance snapshots
+events/images/
+
+# Local database files
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# Surveillance snapshots
+events/images/

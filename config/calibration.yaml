@@ -1,0 +1,30 @@
+# Camera calibration for monocular range estimation (Stage 5)
+# These are approximate values for a typical laptop / USB webcam.
+# Replace with real calibration for better accuracy.
+
+camera:
+  image_width: 1280
+  image_height: 720
+
+  # Sensor & lens (approximate for many 1080p webcams)
+  sensor_width_mm: 6.17          # 1/2.3" sensor
+  focal_length_mm: 4.5
+
+  # If you know the focal length in pixels you can set it directly:
+  # focal_length_px: 1100
+
+  # Optional: measured focal length in pixels (overrides the mm calculation)
+  # focal_length_px: 1050
+
+# Approximate real-world widths in metres for distance estimation.
+# Adjust these to match the drones you expect to see.
+object_widths_m:
+  quadcopter: 0.35
+  hexacopter: 0.55
+  fixed_wing: 1.20
+  racing_drone: 0.25
+  unknown_drone: 0.40
+  drone: 0.40
+  airplane: 15.0
+  bird: 0.30
+  person: 0.50

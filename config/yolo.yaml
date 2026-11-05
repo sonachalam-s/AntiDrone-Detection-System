@@ -1,0 +1,15 @@
+# YOLO configuration (can be overridden by command-line or settings.py)
+
+model: models/yolo/best.pt       # yolo11n.pt | yolo11s.pt | yolo11m.pt | path/to/custom.pt
+confidence: 0.45
+iou: 0.50
+imgsz: 640
+device: auto               # auto | cuda | cpu
+
+# Later stages will use these
+classes:
+  - drone
+  - bird
+  - helicopter
+  - aircraft
+  - unknown_object
